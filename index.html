@@ -522,7 +522,6 @@
     // ── Público: toggle desktop accordion ─────────────────────────
 
     window.toggleStep = function (i) {
-        if (window.innerWidth < 768) return; // mobile uses next/prev only
         var el = document.getElementById('step-' + i);
         if (el) el.classList.toggle('open');
     };
